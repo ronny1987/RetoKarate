@@ -29,4 +29,4 @@ ruta: src/test/java/runners/runnerKarate.java
 
 ## 👨‍💻 Autor
 
-Proyecto desarrollado como parte de un reto de automatización QA." 
+Jonathan Osorio Espinoza
