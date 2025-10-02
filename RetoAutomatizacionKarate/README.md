@@ -6,7 +6,7 @@ DSL*.
 
 - *src/test/java/resources/feature/* → Archivos .feature de cada endpoint
 - *karate-config.js* → Configuración global y utilidades (generación de datos)
-- *RunnerTests.java* → Clase runner para ejecutar los features
+- *runnerKarate.java* → Clase runner para ejecutar los features
 
 ## 🚀 Endpoints Automatizados
 
