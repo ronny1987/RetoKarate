@@ -1,26 +1,3 @@
-//function fn() {
-//  var config = {
-//    baseUrl: 'https://serverest.dev'
-//  };
-//
-//  function randomEmail() {
-//    return 'qa_' + java.util.UUID.randomUUID().toString() + '@mail.com';
-//  }
-//
-//  function randomUser() {
-//    return {
-//      nome: 'Usuario QA',
-//      email: randomEmail(),
-//      password: '1234',
-//      administrador: 'true'
-//    };
-//  }
-//
-//  config.randomEmail = randomEmail;
-//  config.randomUser = randomUser;
-//
-//  return config;
-//}
 function fn() {
   var config = {
     baseUrl: 'https://serverest.dev'
@@ -39,9 +16,7 @@ function fn() {
     };
   }
 
-  // -----------------------
-  // Helpers para tests negativos
-  // -----------------------
+  
   // email sin arroba -> inválido
   function randomInvalidEmail_noAt() {
     return 'qa_' + java.util.UUID.randomUUID().toString() + 'mail.com'; // falta '@'
