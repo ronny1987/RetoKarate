@@ -4,9 +4,10 @@ Feature: Api (POST /usuarios)
     * url baseUrl
     * configure ssl = true
 
-  @caso-1 @registrarusuario @smoke-test @regresion
+  @RegUser-1 @registrarusuario @smoke-test @regresion
   Scenario: Registrar usuarios - prueba exitosa - OK
     * def user =  randomUser()
+    * print user
     Given path 'usuarios'
     And request user
     When method post
@@ -15,7 +16,7 @@ Feature: Api (POST /usuarios)
     * def userId = response._id
     * print 'Usuario Creado con ID ', userId, ' y mail;', user.email
 
-  @caso-2 @registrarusuario @smoke-test @regresion
+  @RegUser-2 @registrarusuario @smoke-test @regresion
   Scenario Outline: Registrar usuario con email inválido - NoOK
     * def userInvalid = randomInvalidUser()
     Given path 'usuarios'

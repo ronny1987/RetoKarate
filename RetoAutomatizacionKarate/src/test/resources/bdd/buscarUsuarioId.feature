@@ -4,7 +4,7 @@ Feature: Api (GET  /usuarios)
     * url baseUrl
     * configure ssl = true
 
-  @caso-1 @buscarusuarioporid @smoke-test @regresion
+  @LisUserId-1 @buscarusuarioporid @smoke-test @regresion
   Scenario: Buscar usuario por Id - prueba exitosa - OK
     * def newUser = call randomUser
     Given path 'usuarios'

@@ -1,35 +1,15 @@
-//function fn() {
-//  var config = {
-//    baseUrl: 'https://serverest.dev'
-//  };
-//
-//  function randomEmail() {
-//    return 'qa_' + java.util.UUID.randomUUID().toString() + '@mail.com';
-//  }
-//
-//  function randomUser() {
-//    return {
-//      nome: 'Usuario QA',
-//      email: randomEmail(),
-//      password: '1234',
-//      administrador: 'true'
-//    };
-//  }
-//
-//  config.randomEmail = randomEmail;
-//  config.randomUser = randomUser;
-//
-//  return config;
-//}
+// Url Api
 function fn() {
   var config = {
     baseUrl: 'https://serverest.dev'
   };
-
+//Correo aleatorio
   function randomEmail() {
-    return 'qa_' + java.util.UUID.randomUUID().toString() + '@mail.com';
+    return 'qa_' + java.util.UUID.
+                   randomUUID().
+                   toString() + '@gmail.com';
   }
-
+// Usuario Aleatorio con correo aleatorio
   function randomUser() {
     return {
       nome: 'Usuario QA',
@@ -39,15 +19,14 @@ function fn() {
     };
   }
 
+  // Utiliario para tests negativos
   // -----------------------
-  // Helpers para tests negativos
-  // -----------------------
-  // email sin arroba -> inválido
+  // Correo sin @ -> inválido
   function randomInvalidEmail_noAt() {
     return 'qa_' + java.util.UUID.randomUUID().toString() + 'mail.com'; // falta '@'
   }
 
-  // email con espacios -> inválido
+  // Correo con espacios -> inválido
   function randomInvalidEmail_spaces() {
     return 'qa ' + java.util.UUID.randomUUID().toString() + '@mail .com';
   }
