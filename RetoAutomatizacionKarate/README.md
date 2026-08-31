@@ -18,9 +18,9 @@ DSL*.
 
 ## 🔧 Requisitos
 
-- Java 11+
-- Maven
-- Git
+- **Java:** Versión 11 o superior (Desarrollado y probado con Amazon Corretto 23)
+- **Apache Maven:** Versión 3.9+ (Configurado globalmente en variables de entorno)
+- **Git**
 
 ## ▶️ Ejecución
 
