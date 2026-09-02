@@ -4,7 +4,7 @@ DSL*.
 
 ## 📌 Estructura del Proyecto
 
-- *src/test/java/resources/feature/* → Archivos .feature de cada endpoint
+- *src/test/resources/bdd* → Archivos .feature de cada endpoint
 - *karate-config.js* → Configuración global y utilidades (generación de datos)
 - *runnerKarate.java* → Clase runner para ejecutar los features
 
@@ -18,9 +18,9 @@ DSL*.
 
 ## 🔧 Requisitos
 
-- Java 11+
-- Maven
-- Git
+- **Java:** Versión 11 o superior (Desarrollado y probado con Amazon Corretto 23)
+- **Apache Maven:** Versión 3.9+ (Configurado globalmente en variables de entorno)
+- **Git**
 
 ## ▶️ Ejecución
 
