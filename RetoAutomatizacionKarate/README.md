@@ -4,7 +4,7 @@ DSL*.
 
 ## 📌 Estructura del Proyecto
 
-- *src/test/java/resources/feature/* → Archivos .feature de cada endpoint
+- *src/test/resources/bdd* → Archivos .feature de cada endpoint
 - *karate-config.js* → Configuración global y utilidades (generación de datos)
 - *runnerKarate.java* → Clase runner para ejecutar los features
 
