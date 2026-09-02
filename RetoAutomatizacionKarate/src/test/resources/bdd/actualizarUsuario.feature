@@ -5,7 +5,7 @@ Feature: Api (PUT /usuarios)
     * configure ssl = true
 
   @ActUser-1 @actualizarusuario @smoke-test @regresion
-  Scenario: Actualizar usuario - prueba exitosa - OK
+  Scenario: CP PUT Usuario - Http 200 - Actualizar Usuario - OK
     * def resultadoRegistro = call read('file:src/test/resources/bdd/registrarUsuarios.feature@RegUser-1')
     * def userId = resultadoRegistro.response._id
     * print 'Usuario Registrado con ID:', userId

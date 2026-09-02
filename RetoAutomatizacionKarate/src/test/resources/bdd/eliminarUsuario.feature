@@ -5,7 +5,7 @@ Feature: Api (DELETE /usuario)
     * configure ssl = true
 
   @DeltUser-1 @eliminarusuario @smoke-test @regresion
-  Scenario: Eliminar usuarios - prueba exitosa - OK
+  Scenario: CP DELETE Usuario - Http 200 - Eliminar usuarios - OK
     * def reponseUserId = call read('file:src/test/resources/bdd/registrarUsuarios.feature@RegUser-1')
     * def userId = reponseUserId.response._id
     Given path 'usuarios', userId

@@ -5,7 +5,7 @@ Feature: Api (GET  /usuarios)
     * configure ssl = true
 
   @LisUserId-1 @buscarusuarioporid @smoke-test @regresion
-  Scenario: Buscar usuario por Id - prueba exitosa - OK
+  Scenario: CP GET Usuario - Http 200 - Buscar usuario por Id  - OK
     * def newUser = call randomUser
     Given path 'usuarios'
     And request newUser
