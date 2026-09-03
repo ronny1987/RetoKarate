@@ -64,4 +64,4 @@ bajo diferentes escenarios (Positivos y Negativos).
 
 ## 👨‍💻 Autor
 
-Jonathan Osorio Espinoza
+Jonathan Ronny, Osorio Espinoza
