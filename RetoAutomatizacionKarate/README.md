@@ -22,10 +22,34 @@ DSL*.
 - **Apache Maven:** Versión 3.9+ (Configurado globalmente en variables de entorno)
 - **Git**
 
-## ▶️ Ejecución
+## 🚀 Ejecución de Pruebas (Backend - Karate)
 
-Para ejecutar los features realizarlo desde el archivo runnerKarate
-ruta: src/test/java/runners/runnerKarate.java
+A continuación se detallan los comandos de Maven necesarios para ejecutar la suite de pruebas desde la terminal. 
+
+### 1. Ejecutar toda la suite completa
+Este comando busca y ejecuta todos los escenarios de prueba configurados en el proyecto:
+```bash
+mvn test
+```
+
+### 2. Ejecutar por un Tag específico
+Para segmentar la ejecución utilizando las etiquetas definidas en los archivos `.feature`, ejecute:
+
+* **Pruebas de Humo:**
+  ```bash
+  mvn test -Dkarate.options="--tags @smoke-test"
+  ```
+
+* **Pruebas de Regresión:**
+  ```bash
+  mvn test -Dkarate.options="--tags @regresion"
+  ```
+
+* **Flujo específico (Ej. Registrar Usuario):**
+  ```bash
+  mvn test -Dkarate.options="--tags @registrarusuario"
+  ```
+
 
 ## 👨‍💻 Autor
 
